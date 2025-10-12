@@ -1,0 +1,20 @@
+@import "tailwindcss";
+@plugin "daisyui";
+@utility btn {
+  @apply rounded-full;
+}
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 243, 243, 0.852);
+  background-color: #e5d0d077;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
