@@ -7,14 +7,10 @@ import Footer from "./components/Footer";
 
 function App() {
   const [login, setLogin] = useState(false);
-  const [name, setname] = useState("Login");
-  const handleClick = () => {
-    // setLogin(!login);
-  };
+
   return (
     <>
       <center>
-        {/* <Navbar /> */}
         <Card />
       </center>
     </>
