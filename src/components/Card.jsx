@@ -6,7 +6,6 @@ import { WiHumidity } from "react-icons/wi";
 import { FaTemperatureHigh } from "react-icons/fa6";
 
 import sunCloudIcon from "../assets/sun-with-cloud-in-flat-icon-weather-app-forecast-summer-climate-free-vector.jpg";
-import cloud from "../assets/unnamed.png";
 
 function Card() {
   const [city, setCity] = useState("");
@@ -54,15 +53,37 @@ function Card() {
   return (
     <div className=" bg-white text-black w-96 h-115 mt-15 p-3 rounded-[25px]">
       <div className="card-body">
-        <div className="search-bar flex">
-          <input
-            type="text"
-            placeholder="Enter a city here"
-            className="w-60 mr-2 h-8 border-2 rounded-2xl pl-2 ml-6 "
-            ref={cityName}
-          />
-          <CiSearch className="size-6" onClick={getCity} />
+        <div
+          className="rounded-[10px] py-2 px-1 w-55 ml-10 border border-gray-500
+"
+        >
+          <div className="flex justify-between w-50 gap-5 ">
+            <div>
+              <input
+                type="text"
+                className="  focus:outline-0"
+                placeholder="Enter the item name"
+                ref={cityName}
+              />
+            </div>
+            <div className="items-end">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                className="size-5"
+                onClick={getCity}
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M10.5 3.75a6.75 6.75 0 1 0 0 13.5 6.75 6.75 0 0 0 0-13.5ZM2.25 10.5a8.25 8.25 0 1 1 14.59 5.28l4.69 4.69a.75.75 0 1 1-1.06 1.06l-4.69-4.69A8.25 8.25 0 0 1 2.25 10.5Z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            </div>
+          </div>
         </div>
+
         <img
           src={sunCloudIcon}
           alt="Weather icon"
